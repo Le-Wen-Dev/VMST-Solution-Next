@@ -17,10 +17,14 @@ if [ -z "$COMMIT_MSG" ]; then
   exit 1
 fi
 
-# 2. Git add, commit, push
+# 2. Git add, commit, push (skip if nothing to commit)
 echo -e "\n${GREEN}[1/4] Committing...${NC}"
 git add -A
-git commit -m "$COMMIT_MSG"
+if git diff --cached --quiet; then
+  echo "No changes to commit, skipping..."
+else
+  git commit -m "$COMMIT_MSG"
+fi
 git push origin main
 
 # 3. Build
