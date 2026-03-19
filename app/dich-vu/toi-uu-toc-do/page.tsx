@@ -3,126 +3,93 @@ import ServiceDetailTemplate from "@/components/ServiceDetailTemplate";
 
 export const metadata: Metadata = {
   title: "Tối ưu tốc độ Website | VMST Solutions",
-  description: "Dịch vụ tối ưu tốc độ website chuyên nghiệp: cải thiện Core Web Vitals, PageSpeed Insights, giảm thời gian tải trang, tăng tỷ lệ chuyển đổi.",
+  description: "Tăng PageSpeed Score 90+, giảm bounce rate, cải thiện SEO ranking. Kinh nghiệm tối ưu hơn 200 website.",
 };
 
 export default function ToiUuTocDo() {
   return (
     <ServiceDetailTemplate
       title="Tối ưu tốc độ Website"
-      subtitle="Cải thiện Core Web Vitals, PageSpeed Insights và trải nghiệm người dùng toàn diện"
-      heroDesc="VMST Solutions cung cấp dịch vụ tối ưu tốc độ website chuyên sâu, giúp doanh nghiệp đạt điểm PageSpeed 90+ và cải thiện toàn bộ chỉ số Core Web Vitals. Tốc độ tải trang nhanh hơn đồng nghĩa với thứ hạng SEO cao hơn, tỷ lệ thoát trang thấp hơn và doanh thu tăng trưởng bền vững."
-      problemTitle="Vấn đề doanh nghiệp gặp phải"
+      subtitle="Tăng PageSpeed Score 90+, giảm bounce rate, cải thiện SEO ranking"
+      heroDesc="VMST Solutions chuyên tối ưu tốc độ tải trang cho website WordPress, Shopify, React, và custom platform. Với kinh nghiệm tối ưu hơn 200 website, chúng tôi cam kết PageSpeed Score đạt 90+ trên cả mobile và desktop. Website nhanh hơn = ranking Google cao hơn = nhiều khách hàng hơn."
+      problemTitle="Website chậm ảnh hưởng thế nào?"
       problems={[
-        "Website tải chậm trên 5 giây khiến 53% người dùng mobile rời trang trước khi nội dung hiển thị",
-        "Điểm PageSpeed Insights thấp dưới 50, ảnh hưởng trực tiếp đến thứ hạng tìm kiếm Google",
-        "Core Web Vitals không đạt chuẩn: LCP cao, CLS lớn, FID/INP kém làm giảm điểm SEO tổng thể",
-        "Hình ảnh chưa được tối ưu, không dùng định dạng WebP/AVIF, chiếm băng thông không cần thiết",
-        "Thiếu caching, CDN và nén dữ liệu khiến server phải xử lý lại toàn bộ mỗi lần tải trang",
+        "Google xếp hạng thấp website tải chậm — mất traffic organic và khách hàng tiềm năng",
+        "53% người dùng mobile rời trang nếu load quá 3 giây, tăng bounce rate đáng kể",
+        "Core Web Vitals (LCP, FID, CLS) không đạt chuẩn, bị Google đánh dấu 'trải nghiệm kém'",
+        "Hình ảnh chưa tối ưu, CSS/JS chưa minify, không có caching strategy",
+        "Server hosting yếu, shared hosting quá tải vào giờ cao điểm",
       ]}
-      solutionTitle="Giải pháp từ VMST"
+      solutionTitle="Giải pháp tối ưu tốc độ từ VMST"
       solutions={[
-        "Audit toàn diện hiệu suất website bằng Lighthouse, WebPageTest và Chrome DevTools",
-        "Tối ưu hình ảnh: chuyển đổi sang WebP/AVIF, lazy loading, responsive images với srcset",
-        "Triển khai CDN toàn cầu, caching nhiều lớp (browser, server, object cache) và HTTP/2",
-        "Minify và bundle CSS/JS, loại bỏ render-blocking resources, defer/async scripts",
-        "Cải thiện Core Web Vitals: tối ưu LCP, giảm CLS, cải thiện INP theo đúng tiêu chuẩn Google",
-        "Tối ưu server-side: cấu hình Nginx/Apache, PHP-FPM, database query, kết nối Redis/Memcached",
+        "Audit toàn diện: PageSpeed Insights, GTmetrix, WebPageTest, Lighthouse — xác định chính xác bottleneck",
+        "Tối ưu hình ảnh: chuyển WebP/AVIF, lazy loading, responsive images, CDN delivery",
+        "Minify & bundle CSS/JS, eliminate render-blocking resources, critical CSS inlining",
+        "Server-side: caching (Redis, Varnish), Gzip/Brotli compression, HTTP/2, CDN toàn cầu",
+        "Database optimization: query caching, index tuning, cleanup revisions/transients",
+        "Core Web Vitals: LCP < 2.5s, FID < 100ms, CLS < 0.1 — đạt chuẩn Google",
       ]}
       features={[
-        { title: "Core Web Vitals", desc: "Tối ưu toàn bộ 3 chỉ số quan trọng: LCP dưới 2.5s, CLS dưới 0.1, INP dưới 200ms theo tiêu chuẩn Google 2024." },
-        { title: "PageSpeed 90+", desc: "Cam kết đạt điểm PageSpeed Insights từ 90 trở lên cho cả desktop và mobile sau khi hoàn thành tối ưu." },
-        { title: "CDN & Caching", desc: "Triển khai mạng phân phối nội dung toàn cầu, caching thông minh nhiều lớp giúp giảm thời gian phản hồi xuống dưới 200ms." },
-        { title: "Tối ưu hình ảnh", desc: "Chuyển đổi toàn bộ hình ảnh sang WebP/AVIF, nén không mất chất lượng, lazy loading và responsive images tự động." },
-        { title: "Code Optimization", desc: "Minify CSS/JS/HTML, tree shaking, code splitting, loại bỏ unused code và render-blocking resources." },
-        { title: "Server Tuning", desc: "Tối ưu cấu hình web server, database, kết nối Redis cache, nén Gzip/Brotli và HTTP/2 Server Push." },
+        { title: "Image Optimization", desc: "Chuyển đổi WebP/AVIF tự động, lazy loading, responsive srcset, CDN delivery. Giảm 60-80% dung lượng ảnh mà không giảm chất lượng." },
+        { title: "CSS/JS Optimization", desc: "Minify, bundle, tree-shaking, critical CSS inline, defer non-critical JS. Loại bỏ render-blocking resources hoàn toàn." },
+        { title: "Server & Caching", desc: "Redis object cache, page cache, browser cache headers, Gzip/Brotli compression, HTTP/2 push. Giảm TTFB dưới 200ms." },
+        { title: "CDN Integration", desc: "Cloudflare, BunnyCDN hoặc AWS CloudFront. Phân phối static assets từ edge server gần nhất, giảm latency toàn cầu." },
+        { title: "Core Web Vitals", desc: "Tối ưu LCP (Largest Contentful Paint), FID (First Input Delay), CLS (Cumulative Layout Shift) đạt chuẩn xanh Google." },
+        { title: "Database Tuning", desc: "Optimize slow queries, add proper indexes, cleanup revisions/transients/spam, autoload optimization cho WordPress." },
       ]}
       process={[
-        { num: "01", title: "Audit & Phân tích", desc: "Đo lường hiệu suất hiện tại bằng Lighthouse, GTmetrix, WebPageTest. Xác định các điểm nghẽn cổ chai và lập danh sách ưu tiên tối ưu." },
-        { num: "02", title: "Lên kế hoạch tối ưu", desc: "Xây dựng roadmap tối ưu chi tiết theo mức độ ưu tiên, ước tính mức cải thiện kỳ vọng cho từng hạng mục." },
-        { num: "03", title: "Triển khai tối ưu", desc: "Thực hiện tối ưu từng bước trên môi trường staging, kiểm tra kỹ trước khi áp dụng lên production để tránh gián đoạn." },
-        { num: "04", title: "Đo lường & Báo cáo", desc: "So sánh kết quả trước và sau tối ưu, cung cấp báo cáo chi tiết về các chỉ số cải thiện và hướng dẫn duy trì hiệu suất." },
+        { num: "01", title: "Audit & Đo lường", desc: "Chạy full audit: PageSpeed, GTmetrix, Lighthouse. Xác định điểm yếu và ưu tiên tối ưu." },
+        { num: "02", title: "Tối ưu Frontend", desc: "Optimize images, CSS/JS, fonts, critical rendering path. Loại bỏ code thừa, unused plugins." },
+        { num: "03", title: "Tối ưu Backend", desc: "Server caching, database tuning, CDN setup, compression. Upgrade hosting nếu cần." },
+        { num: "04", title: "Test & Monitoring", desc: "Re-test đạt 90+ PageSpeed Score. Setup monitoring tự động, alert khi performance giảm." },
       ]}
       contentBlocks={[
         {
-          heading: "Core Web Vitals là gì và tại sao quan trọng với SEO?",
-          body: `Core Web Vitals là bộ chỉ số do Google định nghĩa để đo lường trải nghiệm người dùng thực tế trên website. Từ năm 2021, Google chính thức đưa Core Web Vitals vào thuật toán xếp hạng tìm kiếm, khiến đây trở thành yếu tố SEO kỹ thuật không thể bỏ qua.
+          heading: "Tốc độ website ảnh hưởng thế nào đến SEO và doanh thu?",
+          body: `Google đã chính thức đưa tốc độ tải trang và Core Web Vitals vào yếu tố xếp hạng. Website chậm không chỉ mất ranking mà còn mất khách hàng trực tiếp:
 
-Ba chỉ số cốt lõi bao gồm:
-• LCP (Largest Contentful Paint): Đo thời gian tải phần tử nội dung lớn nhất trên màn hình. Mục tiêu: dưới 2.5 giây. LCP kém thường do hình ảnh hero chưa tối ưu, server phản hồi chậm hoặc render-blocking resources.
+• Mỗi 1 giây delay giảm 7% conversion rate (nguồn: Google)
+• 53% mobile users rời trang nếu load > 3 giây (nguồn: Google Think)
+• Website tải trong 1 giây có conversion rate cao gấp 3 lần website tải 5 giây
+• Amazon ước tính mỗi 100ms delay mất 1% doanh thu (hàng triệu USD/năm)
 
-• CLS (Cumulative Layout Shift): Đo mức độ dịch chuyển bố cục không mong muốn trong quá trình tải trang. Mục tiêu: dưới 0.1. CLS cao gây khó chịu khi người dùng đang đọc nội dung bị nhảy lung tung.
-
-• INP (Interaction to Next Paint): Thay thế FID từ 2024, đo độ trễ phản hồi của trang với mọi tương tác người dùng. Mục tiêu: dưới 200ms.
-
-Website đạt chuẩn Core Web Vitals không chỉ được Google ưu tiên xếp hạng cao hơn mà còn giữ chân người dùng lâu hơn, tăng tỷ lệ chuyển đổi và giảm chi phí quảng cáo trên mỗi khách hàng.`
+VMST Solutions đã tối ưu tốc độ cho hơn 200 website, trung bình cải thiện PageSpeed Score từ 30-50 lên 90-100. Kết quả: tăng 20-40% traffic organic, giảm 30% bounce rate, tăng 15-25% conversion rate.`
         },
         {
-          heading: "Tác động của tốc độ website đến doanh thu",
-          body: `Nghiên cứu từ Google và các tổ chức hàng đầu thế giới đã chứng minh mối liên hệ trực tiếp giữa tốc độ tải trang và hiệu quả kinh doanh:
+          heading: "Core Web Vitals là gì? Cách đạt điểm xanh",
+          body: `Core Web Vitals là bộ 3 chỉ số Google dùng để đánh giá trải nghiệm người dùng trên website:
 
-• Amazon phát hiện mỗi 100ms tăng thêm thời gian tải trang làm giảm 1% doanh thu. Với doanh thu hàng tỷ đô, con số này cực kỳ đáng kể.
+• LCP (Largest Contentful Paint): Thời gian render phần tử lớn nhất trên viewport. Tốt: < 2.5 giây. VMST tối ưu: preload hero image, optimize fonts, server-side rendering.
 
-• Google báo cáo 53% người dùng mobile rời bỏ trang nếu tải chậm hơn 3 giây. Với tỷ lệ traffic mobile ngày càng tăng, đây là lượng khách hàng tiềm năng khổng lồ bị mất.
+• FID / INP (First Input Delay / Interaction to Next Paint): Thời gian phản hồi tương tác đầu tiên. Tốt: < 100ms. VMST tối ưu: code splitting, defer 3rd party scripts, web workers.
 
-• Walmart tăng tỷ lệ chuyển đổi 2% cho mỗi giây cải thiện tốc độ tải trang.
+• CLS (Cumulative Layout Shift): Mức độ nhảy layout khi tải trang. Tốt: < 0.1. VMST tối ưu: set width/height cho images, font-display swap, reserve space cho ads/embeds.
 
-• Pinterest giảm thời gian tải trang 40%, kết quả là tăng 15% lưu lượng tìm kiếm tự nhiên và 15% tỷ lệ đăng ký.
-
-Đối với doanh nghiệp Việt Nam, đặc biệt trong lĩnh vực thương mại điện tử và dịch vụ, tối ưu tốc độ website là khoản đầu tư có ROI cao nhất trong tất cả các hoạt động marketing kỹ thuật số. Chi phí tối ưu một lần nhưng lợi ích kéo dài nhiều năm.`
+VMST cam kết tối ưu website đạt điểm xanh cả 3 chỉ số Core Web Vitals, giúp Google đánh giá "trải nghiệm tốt" và ưu tiên ranking.`
         },
         {
-          heading: "Các kỹ thuật tối ưu tốc độ website chuyên sâu",
-          body: `VMST Solutions áp dụng đầy đủ các kỹ thuật tối ưu hiện đại nhất:
+          heading: "Chi phí dịch vụ tối ưu tốc độ website",
+          body: `Chi phí phụ thuộc vào nền tảng, quy mô website và mức độ cần tối ưu:
 
-Tối ưu hình ảnh:
-• Chuyển đổi sang định dạng WebP (giảm 25-35% so với JPEG) và AVIF (giảm 50% so với JPEG)
-• Triển khai lazy loading cho hình ảnh ngoài viewport
-• Sử dụng srcset và sizes để phục vụ hình ảnh đúng kích thước cho từng thiết bị
-• Preload hình ảnh LCP để cải thiện điểm Core Web Vitals
+Gói Basic: Từ 3 triệu (một lần) — Tối ưu hình ảnh, minify CSS/JS, caching cơ bản, CDN setup. Phù hợp website WordPress < 50 trang.
 
-Tối ưu CSS/JavaScript:
-• Minify và compress toàn bộ CSS, JS, HTML
-• Loại bỏ unused CSS với PurgeCSS, tree shaking với Webpack/Vite
-• Code splitting và dynamic import để giảm bundle size ban đầu
-• Defer non-critical JavaScript, inline critical CSS
+Gói Advanced: Từ 8 triệu (một lần) — Full optimization: frontend + backend + server, database tuning, Core Web Vitals. Phù hợp website 50-500 trang, e-commerce.
 
-Tối ưu server và mạng:
-• Cấu hình CDN với edge caching tại nhiều điểm trên thế giới
-• Bật HTTP/2 hoặc HTTP/3 (QUIC) để multiplexing requests
-• Nén Brotli (hiệu quả hơn Gzip 15-20%) cho tất cả text resources
-• Tối ưu TTFB (Time to First Byte) qua server-side caching với Redis
+Gói Premium + Monitoring: Từ 2 triệu/tháng — Toàn bộ gói Advanced + monitoring 24/7, monthly report, tối ưu liên tục khi thêm nội dung mới. Phù hợp website traffic cao.
 
-Tối ưu database và backend:
-• Phân tích và tối ưu slow queries, thêm index phù hợp
-• Triển khai object caching với Redis/Memcached
-• Tối ưu cấu hình PHP-FPM, connection pooling
-• Database query caching và query optimization`
-        },
-        {
-          heading: "Tại sao chọn VMST Solutions cho dịch vụ tối ưu tốc độ?",
-          body: `VMST Solutions có đội ngũ kỹ sư chuyên sâu về hiệu suất web với kinh nghiệm tối ưu hàng trăm website từ quy mô nhỏ đến enterprise:
-
-Kinh nghiệm thực chiến: Chúng tôi đã tối ưu website cho khách hàng tại Mỹ, Singapore, Úc - những thị trường đòi hỏi tiêu chuẩn kỹ thuật cao nhất. Kinh nghiệm này giúp chúng tôi xử lý mọi tình huống phức tạp.
-
-Cam kết kết quả đo lường được: Không như nhiều đơn vị chỉ hứa hẹn chung chung, VMST cam kết các chỉ số cụ thể: PageSpeed 90+, LCP dưới 2.5s, CLS dưới 0.1. Nếu không đạt, chúng tôi tiếp tục tối ưu miễn phí.
-
-Không ảnh hưởng giao diện: Toàn bộ quá trình tối ưu được thực hiện ở tầng kỹ thuật, không thay đổi giao diện hay nội dung website. Người dùng cuối không nhận thấy sự khác biệt ngoài tốc độ nhanh hơn đáng kể.
-
-Hỗ trợ dài hạn: Sau khi tối ưu, chúng tôi cung cấp báo cáo hiệu suất định kỳ và tư vấn duy trì tốc độ khi website có thêm nội dung mới, đảm bảo hiệu suất bền vững theo thời gian.`
+Tất cả gói bao gồm: audit trước/sau, báo cáo PageSpeed Score, hướng dẫn duy trì tốc độ. Không đạt 90+ PageSpeed = miễn phí.`
         },
       ]}
       faqs={[
-        { q: "Tối ưu tốc độ website mất bao lâu?", a: "Tùy quy mô và mức độ phức tạp của website. Website thông thường: 1-2 tuần. Website lớn với nhiều tính năng: 3-4 tuần. Chúng tôi sẽ đánh giá và báo thời gian cụ thể sau khi audit ban đầu." },
-        { q: "Tối ưu có ảnh hưởng đến giao diện website không?", a: "Không. Toàn bộ tối ưu diễn ra ở tầng kỹ thuật (server, code, hình ảnh). Giao diện và nội dung website hoàn toàn không thay đổi, người dùng chỉ thấy trang tải nhanh hơn." },
-        { q: "Điểm PageSpeed bao nhiêu là tốt?", a: "Google phân loại: 90-100 là tốt (màu xanh), 50-89 là cần cải thiện (màu vàng), dưới 50 là kém (màu đỏ). VMST cam kết đưa website của bạn đạt từ 90 điểm trở lên cho cả desktop và mobile." },
-        { q: "Sau khi tối ưu, tốc độ có duy trì được lâu dài không?", a: "Có, nếu website không thêm quá nhiều plugin nặng hoặc hình ảnh chưa tối ưu. Chúng tôi cung cấp hướng dẫn chi tiết và báo cáo định kỳ để giúp bạn duy trì hiệu suất theo thời gian." },
-        { q: "VMST có tối ưu được WordPress, Shopify, website tùy chỉnh không?", a: "Có, chúng tôi tối ưu được mọi nền tảng: WordPress, WooCommerce, Shopify, Magento, Laravel, Next.js, và các website tùy chỉnh bất kỳ. Mỗi nền tảng có kỹ thuật tối ưu riêng và đội ngũ VMST đều thành thạo." },
+        { q: "Tối ưu tốc độ có ảnh hưởng đến nội dung website không?", a: "Không, VMST chỉ tối ưu kỹ thuật (nén ảnh, cache, code), không thay đổi nội dung hay giao diện. Website vẫn giữ nguyên thiết kế và nội dung ban đầu." },
+        { q: "Mất bao lâu để tối ưu xong?", a: "Gói Basic: 2-3 ngày. Gói Advanced: 5-7 ngày. Gói Premium: setup 1 tuần + monitoring liên tục. Không ảnh hưởng đến hoạt động website." },
+        { q: "VMST có cam kết PageSpeed Score bao nhiêu?", a: "Cam kết đạt 90+ trên cả mobile và desktop. Nếu không đạt, miễn phí toàn bộ. Trung bình website sau tối ưu đạt 95-100 điểm." },
+        { q: "WordPress plugin có làm chậm website không?", a: "Có, mỗi plugin thêm CSS/JS và database queries. VMST audit và loại bỏ plugin không cần thiết, thay thế bằng code tối ưu, giảm 50-70% số plugin." },
       ]}
       pricingTiers={[
-        { name: "Basic", price: "3.000.000đ", features: ["Audit PageSpeed & Core Web Vitals", "Tối ưu hình ảnh (WebP, lazy load)", "Minify CSS/JS/HTML", "Báo cáo trước & sau tối ưu"] },
-        { name: "Pro", price: "8.000.000đ", highlight: true, features: ["Tất cả tính năng Basic", "Cấu hình CDN & caching", "Tối ưu server (Nginx, PHP-FPM)", "Cải thiện Core Web Vitals", "Cam kết PageSpeed 90+", "Hỗ trợ 3 tháng sau tối ưu"] },
-        { name: "Enterprise", price: "20.000.000đ", features: ["Tất cả tính năng Pro", "Tối ưu database & Redis cache", "HTTP/2 & Brotli compression", "Monitoring hiệu suất 24/7", "Báo cáo định kỳ hàng tháng", "SLA cam kết tốc độ", "Đội ngũ kỹ thuật riêng"] },
+        { name: "Basic", price: "3.000.000đ", features: ["Tối ưu hình ảnh", "Minify CSS/JS", "Caching cơ bản", "CDN setup"] },
+        { name: "Advanced", price: "8.000.000đ", highlight: true, features: ["Full frontend + backend", "Database tuning", "Core Web Vitals", "Báo cáo trước/sau", "Cam kết 90+ score"] },
+        { name: "Premium", price: "2.000.000đ/th", features: ["Toàn bộ gói Advanced", "Monitoring 24/7", "Monthly report", "Tối ưu liên tục", "Alert tự động", "Dedicated support"] },
       ]}
       relatedServices={[
         { title: "Thiết kế Website", path: "/dich-vu/thiet-ke-website" },
