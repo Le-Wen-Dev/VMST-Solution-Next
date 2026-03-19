@@ -46,7 +46,7 @@ const HeroSection = () => (
         <div className="hidden lg:block">
           <div className="rounded-2xl overflow-hidden">
             <img
-              src="/assets/hero-illustration.jpg"
+              src="/image/hero-illustration.jpg"
               alt="Đội ngũ VMST Solutions làm việc cùng khách hàng"
               className="w-full object-cover aspect-[4/3]"
             />
